@@ -11,7 +11,7 @@ public class BankAccountTest {
     public void testPut() throws Exception {
 
         // setup
-        BankAccount ba = null; // TODO add your own implementation
+        BankAccount ba = new MyBankAccount();
 
         // exercise
         ba.put(1000);
@@ -25,7 +25,7 @@ public class BankAccountTest {
     public void testWithdraw() throws Exception {
 
         // setup
-        BankAccount ba = null; // TODO add your own implementation
+        BankAccount ba = new MyBankAccount();
 
         // exercise
         ba.put(1000);
@@ -43,9 +43,8 @@ public class BankAccountTest {
     @org.junit.Test
     public void testTransfer() throws Exception {
         // setup
-        BankAccount ba = null; // TODO add your own implementation
-        BankAccount ba2 = null; // TODO add your own implementation
-
+        BankAccount ba = new MyBankAccount();
+        BankAccount ba2 = new MyBankAccount();
         // exercise
         ba.put(1000);
         ba2.put(500);
